@@ -9,7 +9,7 @@ namespace lesson13UnitTests
         public void test1()
         {
             CustomerData customer = new CustomerData();
-            string result = customer.ToString();
+            string? result = customer.ToString();
             Assert.NotNull(result);
         }
 
@@ -17,17 +17,10 @@ namespace lesson13UnitTests
         public void test2()
         {
             ProductInfo product = new ProductInfo();
-            string result = product.ToString();
+            string? result = product.ToString();
             Assert.Contains(result, "Product");
         }
-        [Fact]
-        public void test3()
-        {
-            ProductInfo product1 = new ProductInfo();
-            string result = product1.ToString();
-            Assert.NotNull(result);
-        }
-
+       
 
     }
 }
